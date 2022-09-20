@@ -1,1 +1,3 @@
-# html-css-portfolio-school
+#Portfolio Website (School)
+
+Practice portfolio website for school.
