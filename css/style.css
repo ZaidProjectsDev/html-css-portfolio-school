@@ -1,10 +1,13 @@
 #container{
-    background-color : lightblue;
+    background-color : rgb(255, 255, 255);
   
     margin : 0 auto;
     max-width : 900px;
     min-width : 320px;
+    border-radius: 128px;
+    overflow: hidden;
   }
+ 
   body
   {
       margin : 0px;
@@ -13,7 +16,7 @@
     font-family : arial;
   }
   p{
-    color : #00AAAA;
+    color : #004758;
     margin : 7px;
     font-size : 22px;
   }
@@ -22,7 +25,7 @@
     font-size : 25px;
   }
   a:hover{
-    color : red;
+    color : rgb(0, 255, 238);
     text-decoration : none;
   }
   ul{
@@ -30,7 +33,7 @@
     font-size : 32px;
   }
   h2{
-    color : #FF00FF;
+    color : #125d49;
     font-size : 45px;
   }
   img
@@ -60,22 +63,33 @@
     margin:auto;
     display : block;
     max-width : 640px;
-    background-color : #113388;
+    background-color : #686868;
   }
   .customtable
   {
     margin:auto;
     display : block;
     max-width : 640px;
-    background-color : #113388;
+    background-color : #747474;
     font-size : 1.2em;
   }
   h1,h2
   {
-    font-family : cursive;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+    margin : auto;
+    margin-top : 20px;
+    max-width : 400px;
   }
   
   footer a
   {
     font-size : 1.9em;
+  }
+  header
+  {
+    display: block;
+    margin : auto;
+    margin-top : 20px;
+    max-width : 400px;
   }
