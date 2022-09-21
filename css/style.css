@@ -6,10 +6,12 @@
     min-width : 320px;
     border-radius: 128px;
     overflow: hidden;
+    
   }
  
   body
   {
+    background-color: #96c9bc37;
       margin : 0px;
     padding :0px;
     font-size : 15px;
@@ -33,7 +35,9 @@
     font-size : 32px;
   }
   h2{
-    color : #125d49;
+    display: block;
+    background-color: black;
+    color : #36fcc7;
     font-size : 45px;
   }
   img
@@ -81,7 +85,10 @@
     margin-top : 20px;
     max-width : 400px;
   }
-  
+  h3{
+    display:  block;
+    margin:  auto;
+  }
   footer a
   {
     font-size : 1.9em;
