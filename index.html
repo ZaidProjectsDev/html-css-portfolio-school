@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel ="stylesheet" href = "css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
 </head>
+
 <body>
-    <div id = "container">
-        <header>
-          <h1> Zaid</h1>
-            <h2>About Me</h2>
-            <p>My name is Zaid Ashley, it's great to meet you.</p>
-            <p>I'm a 24 year old American Expat living in Europe.</p>
-          <img src = "img/profile.jpg" alt = "Logo Website Zaid">
-        <a href = "#hobbies">Hobbies</a>
-        <a href = "#goals">Goals</a>
-        <a href = "#personal">Personal Opinions</a>
-        <a href = "#rig">Rig</a>
-        </header>
-        <main>
-            <section>
-                <h2 id="hobbies">Hobbies</h2>
-                <h3>I get a lot done, but on any given week I'll be :</h3>
-                <h4>Playing :</h4>
-                <ul>
-                    <li>JRPGs (Xenoblade 3, Final Fantasy 15, Soul Hackers 2)</li>
-                    <li>Adventure Games (Guardians of the Galaxy, Hellblade, Sonic Adventure)</li>
-                    <li>Horror Games (Resident Evil : Vilalge, Dead Space 2, Silent Hill 3)</li>
-                    <li>Shooter Games (DOOM-2016, DOOM-Eternal, Half-Life 2, Neon-White, Fortnite)</li>
-                </ul>
-            </section>
-        <section>
-            
-            <h2 id="goals"> Goals </h2>
-            <h3>I'm not perfect so I'm trying to get better at :</h3>
-                <ul>
-                    <li>Game Programming</li>
-                    <li>Stress Management</li>
-                    <li>Self Esteem</li>
-                    <li>Web Design</li>
-                </ul>
-            </section>
-          <section>
-            <section>
-            
-                <h2 id="personal"> Personal Opinions </h2>
-                <h3>I consider myself a pessimist :</h3>
-                    <p>A bit of pessimism can be healthy but, truth be told, I don't have a lot to be optimistic about.</p>
-                    <p>Sometimes being awake feels like a waste of time because it always feels like the world is ending.</p>
-                    <p>Most of the time I feel like an imposter and it causes me to undermine my own work.</p>
-                </section>
 
-        </main>
-        <div class = "customtable">
-            <h2 id = "rig">Whats in my rig?</h2>
-        <table>
-          <tr>
-            <th>CPU</th>
-            <th>GPU</th>
-            <th>RAM</th>
-            <th>SSD & HDD</th>
-          </tr>
-          <tr>
-            <td>AMD Ryzen 5 3600</td>
-            <td>Nvidia RTX 2070 8GB</td>
-            <td>24GB Corshair Vengence 3200mhz DDR RAM</td>
-            <td>Various Samsung & Western Digital drives</td>
-          </tr>
-        
+  <header>
+    <nav>
+      <figure class="profile" alt="Logo Website Zaid">
+      </figure>
+      <nav>
+        <a href="#hobbies"> Hobbies </a>
+        <a href="#goals"> Goals </a>
+        <a href="#personal"> Personal Opinions </a>
+        <a href="#rig"> Rig </a>
+      </nav>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <section>
+        <h2 id="hobbies">Hobbies</h2>
+        <h3>I get a lot done, but on any given week I'll be :</h3>
+        <h4>Playing :</h4>
+        <ul>
+          <li>JRPGs (Xenoblade 3, Final Fantasy 15, Soul Hackers 2)</li>
+          <li>Adventure Games (Guardians of the Galaxy, Hellblade, Sonic Adventure)</li>
+          <li>Horror Games (Resident Evil : Vilalge, Dead Space 2, Silent Hill 3)</li>
+          <li>Shooter Games (DOOM-2016, DOOM-Eternal, Half-Life 2, Neon-White, Fortnite)</li>
+        </ul>
+      </section>
+    </div>
+    <div class="card">
+      <section>
 
-        
-         
-        </table>
-        </div>
-        <footer>
-        <span><a href = "https://www.springvertexzero.com" target="_blank"><span>Check out my business site.</span></a></span> 
+        <h2 id="goals"> Goals </h2>
+        <h3>I'm not perfect so I'm trying to get better at :</h3>
+        <ul>
+          <li>Game Programming</li>
+          <li>Stress Management</li>
+          <li>Self Esteem</li>
+          <li>Web Design</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="card">
+      <section>
+
+        <h2 id="personal"> Personal Opinions </h2>
+        <h3>I consider myself a pessimist :</h3>
+        <p>A bit of pessimism can be healthy but, truth be told, I don't have a lot to be optimistic about.</p>
+        <p>Sometimes being awake feels like a waste of time because it always feels like the world is ending.</p>
+        <p>Most of the time I feel like an imposter and it causes me to undermine my own work.</p>
+      </section>
+    </div>
+  </main>
+  <div class="card">
+    <section>
+      <h2 id="rig">Whats in my rig?</h2>
+      <table>
+        <tr>
+          <th>CPU</th>
+          <th>GPU</th>
+          <th>RAM</th>
+          <th>SSD & HDD</th>
+        </tr>
+        <tr>
+          <td>AMD Ryzen 5 3600</td>
+          <td>Nvidia RTX 2070 8GB</td>
+          <td>24GB Corshair Vengence 3200mhz DDR RAM</td>
+          <td>Various Samsung & Western Digital drives</td>
+        </tr>
+
+
+
+
+      </table>
+    </section>
+  </div>
+  <footer>
+    <div class="card">
+      <section>
+        <span><a href="https://www.springvertexzero.com" target="_blank"><span><h2>Check out my business
+              site.</h2></span></a></span>
         <h3><span>&copy;zaidashley</span></h3>
-        </footer>
-        </div>
+      </section>
+    </div>
+  </footer>
+
 </body>
+
 </html>

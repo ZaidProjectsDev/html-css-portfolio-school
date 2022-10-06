@@ -1,25 +1,14 @@
-#container{
-    background-color : rgb(255, 255, 255);
-  
-    margin : 0 auto;
-    max-width : 900px;
-    min-width : 320px;
-    border-radius: 128px;
-    overflow: hidden;
-    
-  }
- 
-  body
+ body
   {
     background-color: #96c9bc37;
-      margin : 0px;
-    padding :0px;
+    margin : 0 auto;
+
     font-size : 15px;
     font-family : arial;
   }
   p{
     color : #004758;
-    margin : 7px;
+
     font-size : 22px;
   }
   a{
@@ -35,59 +24,81 @@
     font-size : 32px;
   }
   h2{
-    display: block;
+
     background-color: black;
     color : #36fcc7;
     font-size : 45px;
   }
   img
   {
-    display : block;
-    margin : auto;
-    max-width : 400px;
+
+    margin :  0 auto;
+ 
   }
   footer
   {
-    display: block;
-    margin : auto;
+
+    margin : 0 auto;
     margin-top : 20px;
-    max-width : 400px;
+    
+  }
+
+  nav, p, a
+  {
+    
+     text-align: center;
+     text-decoration: none;
+
   }
   nav
   {
-    background-color : black;
+    background-color: black;
     color : white;
-    margin : auto;
-    max-width : 400px;
-    display : block;
-    
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-decoration: none;
+    align-items: center;
+    gap : 2em;
+
+  }
+  .profile
+  {
+
+    width: 8em;
+    height: 8em;
+    background-image:url(../img/profile.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card
+  {
+
+    background-color : #686868;
   }
   section
   {
-    margin:auto;
-    display : block;
-    max-width : 640px;
-    background-color : #686868;
+    margin : 50px;
   }
   .customtable
   {
-    margin:auto;
-    display : block;
-    max-width : 640px;
+
+  
     background-color : #747474;
     font-size : 1.2em;
   }
   h1,h2
   {
     font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: block;
-    margin : auto;
-    margin-top : 20px;
-    max-width : 400px;
+
+
+   
   }
   h3{
-    display:  block;
-    margin:  auto;
+    margin: 0 auto;
+    text-align: center;
   }
   footer a
   {
@@ -95,8 +106,27 @@
   }
   header
   {
-    display: block;
-    margin : auto;
+
     margin-top : 20px;
-    max-width : 400px;
+
+  
+  }
+  @media(max-width : 900px)
+  {
+      header
+      {
+        margin-top: 0;
+      }
+      nav
+      {
+        flex-direction: column;
+        justify-content:center;
+      };
+   
+      section
+      {
+        margin: 0 auto;
+      }
+
+      
   }
