@@ -50,7 +50,7 @@ section h2
 .me-bkg
 {
     background-image: url("../img/me.jpg");
-    background-size : 80%;
+    background-size : auto;
     background-repeat: no-repeat;
     background-position: center;
     width: 128em;
