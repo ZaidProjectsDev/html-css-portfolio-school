@@ -31,13 +31,13 @@ function setModalContent(content_id)
         ["img/robot-week-0.jpg", "img/robot-week-1.png"]);
     const cle2Project = new Project(1,"CLE2 : Web Applications",
         "My second CMGT project.<br>  I ended up making a DJ reservation system.",
-        ["img/rv_sys_1.png", "img/rv_sys_2.png", "img/rv_sys_3.png"]);
+        ["img/rv_sys_1.PNG", "img/rv_sys_2.PNG", "img/rv_sys_3.PNG"]);
     const cle3Project = new Project(2,"CLE3 : Mobile",
         "<h1>My third CMGT project.</h1><br>  I worked with a team to make a prototype Hospital Finder for" +
         "the hard of hearing. <br> This was a <b>particularly</b> difficult project as I had to do quite a bit of research" +
         "as well as learn how to make a WebApi and use <b>javascript</b> for various aspects of the project.<br><i>Somehow this was more complicated than working" +
         "on a Unity Game and making custom systems.</i>",
-        ["img/NGT_Pic_0.png", "img/NGT_Pic_1.png", "img/NGT_Pic_2.png" , "img/NGT_Pic_3.png"]);
+        ["img/NGT_Pic_0.PNG", "img/NGT_Pic_1.PNG", "img/NGT_Pic_2.PNG" , "img/NGT_Pic_3.PNG"]);
     const cle4Project = new Project(2,"CLE4 : Games ",
         "Coming Soon...",
         []);
