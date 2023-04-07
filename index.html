@@ -3,27 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
+    <script src="navbar.js"></script>
+    <script src="app_modal_content.js"></script>
     <title>Zaid's student portfolio site</title>
+
 </head>
 <body>
-    <header>
-        <nav id = "navigation-bar">
-            <h1>Welcome</h1>
-           
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#projects">Student Projects</a>
-                <a href="#contact">Contact</a>
-            </ul>
-        </nav>
-    </header>
+<!-- Modal HTML structure -->
+<div id="modal" class="modal">
+    <div class="modal-content">
 
-    <section id = "home">
-        <h2><Span>Zaid</Span> Student, Coder, Developer, Designer</h2>
+        <h2 id ="modal-title">Modal Title</h2>
+
+        <div class="flexbox-container">
+            <div class="flexbox-gallery">
+            </div>
+        </div>
+
+        <p id ="modal-description"> Modal Content</p>
+        <span class="close">&times;</span>
+    </div>
+
+</div>
+    <section id="home" class="flexbox-container">
+        <div class="flexbox-item"  data-project-id="1">
+            <img src="img/robot-week-0.jpg"  alt="Project 1" data-project-id="1">
+            <h3>CLE 1 : Internet of Things</h3>
+            <p>Click to learn more</p>
+        </div>
+        <div class="flexbox-item"  data-project-id="2">
+            <img src="img/rv_sys_1.png" alt="Project 2" data-project-id="2">
+            <h3>CLE 2 : Web Applications</h3>
+            <p>Click to learn more</p>
+        </div>
+        <div class="flexbox-item" data-project-id="3">
+            <img src="img/NGT_ICO.PNG" alt="Project 3" data-project-id="2">
+            <h3>CLE 3 : Mobile </h3>
+            <p>Click to learn more</p>
+        </div>
+        <div class="flexbox-item" data-project-id="0">
+            <img src="img/me.jpg" alt="Project 4" data-project-id="0">
+            <h3>CLE 4</h3>
+            <p>Coming Soon</p>
+        </div>
+        <div class="flexbox-item" data-project-id="5">
+            <img src="img/me_2.PNG" alt="Project 4" data-project-id="5">
+            <h3>About Me</h3>
+            <p>Find out more about this random guy!</p>
+        </div>
     </section>
+
     <section id = "about">
         <section class = "about-me-big">
             <h2>About me</h2>
@@ -101,11 +132,12 @@
                 </form>
             </form>
         </section>
-    </section>
 
+    </section>
     <footer id="end">
-        <h2>Copyright me 2022</h2>
+        <h2>Copyright Zaid Ashley 2022</h2>
     </footer>
 
 </body>
+
 </html>

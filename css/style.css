@@ -1,170 +1,493 @@
-body
-{
-    font-family: Arial;
-    margin: 0 auto;
-    background-color: rgb(208, 208, 208);
-    overflow: scroll;
+/* CSS reset */
+body, h1, h2, h3, p, ul, li, form, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header
-{   margin: 0 auto;
-   
-    background-color: rgb(97, 198, 166);
-    position: sticky;
-    top :0px;
-    order: -100px;
-
+::-webkit-scrollbar {
+    display: none;
 }
-ul
-{
-    margin: auto 0;
-    display : flex;
-    flex-direction: row; 
-    gap: 3em;
-}
-nav
-{
-    text-decoration: none;
-    text-decoration-line: none;
-    margin: 0 auto;
-    display : flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-
-}
-nav a
-{
-    text-decoration: none;
-    text-decoration-line: none;
-    font-size: 1.25em;
-}
-footer
-{
-    margin: 0 auto;
-}
-section h2
-{
-    margin: 0 auto;
-    padding-left: 4vw;
-}
-.me-bkg
-{
-    background-image: url("../img/me.jpg");
-    background-size : auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 128em;
-    height: 30em;
-}
-.about-me-big h2
-{
-    font-size:  1.8em;
-    background-color: rgb(54, 145, 130);
-}
-.about-me-big
-{
-    background-color: rgb(255, 255, 255);
-    margin: 0 auto;
-    width: 90%;
-    min-height: 10vw;
-    font-size:  1.6em;
-}
-.content-holder
-{
-    margin: 0 auto;
-    padding:  0;
-    display: flex;
-    justify-content: space-between;
-  
-}
-.contact-area
-{
-    background-color: rgb(73, 73, 73);
-    margin: 0 auto;
-
-    width: 90%;
-    font-size: 1.4em;
-}
-.contact-area h2
-{
-    padding-left: 0;
-}
-.project-card-table
-{
-
-    margin: 0 auto;
-    display : flex;
-    flex-direction: row;
-    height: 30em;
-   
-}
-.project-card
-{
-    margin: 0 auto;
-    background-color: rgb(97, 198, 166);
-    align-content: center;
-    max-width: 320px;
-    max-height: 20em;
-    animation: scale-down-normal 1s forwards ease-in-out;
-
-}
-
-.project-card-image
-{
-    width: 256px;
-    height: 144px;
-    background-size: cover;
-    
-    
-}
-
-/*Smartphone and Small Monitor Optimization*/
-@media only screen and (max-width: 900px) {
+/* Fluid layout */
 body {
-    background-color: lightblue;
-}
-ul
-{
 
-    display : flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: aliceblue;
-    gap: 0.25em;
-
-}
-nav
-{
-
-    margin: 0 auto;
-    display : flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
-   
-}
-.me-bkg
-{
-    width: 100%;
-    height: 90vw;
-}
-.content-holder
-{
-   flex-direction: column;
-  
-}
-.project-card-table
-{
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2em;
-    height: auto;
-}
-.project-card
-{
-    width: 90%;
-    max-width: 90%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     display: flex;
+    flex-direction: column;
+
+    background-image: url('../img/background_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+header {
+    display: none;
+
+    background-color: rgba(51, 51, 51, 0.86);
+
+    color: #fff;
+    padding-bottom: 25px;
+    filter: drop-shadow(0 0 8px rgb(255, 255, 255));
+}
+
+#navigation-bar {
+    padding: 25px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation-bar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#navigation-bar ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#home {
+    animation: slowDrunkBlur ease-in-out 15s infinite;
+    display: flex;
+
+    filter: drop-shadow(0 15px rgba(0, 0, 0, 0.56));
+    filter: drop-shadow(0 0 8px rgb(255, 255, 255));
+    background-size: cover;
+    height: 100vh;
+
+    align-items : baseline;
+    justify-content: space-between;
+    text-align: center;
+    gap :10px;
+    overflow : scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about {
+    display: none;
+    padding: 20px;
+}
+
+.about-me-big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-holder {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.me-bkg {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/me.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#projects {
+    display: none;
+    padding: 20px;
+}
+
+.project-card-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    width: 300px;
+    margin: 10px;
+}
+
+.project-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card-text {
+    padding: 10px;
+}
+
+#contact {
+    display: none;
+    padding: 20px;
+}
+
+.contact-area {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact-form {
+    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-element {
+    width: 100%;
+    padding: 5px;
+}
+
+.form-element label,
+.form-element select,
+.form-element input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.form-element button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#end {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-slider {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: slide 10s infinite;
+}
+
+.hero-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+h2 {
+
+    margin-bottom: 30px;
+    text-align: center;
+    color: #d5861a;
+    font-size: 28px;
+}
+
+h2 span {
+    font-weight: bold;
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.flexbox-item {
+    backdrop-filter: blur(25px);
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    min-height: 256px;
+    align-self: center;
+}
+
+.flexbox-item:hover {
+    transform: scale(1.05);
+    animation: dancingIconSelected ease-in-out 5s infinite;
+
+}
+
+.flexbox-item img {
+    animation: dancingIcon ease-in-out 4s infinite;
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 25%;
+    filter: drop-shadow(0 15px 32px rgb(0, 0, 0));
+}
+
+.flexbox-item h3 {
+
+    color: white;
+    border-radius: 25%;
+    min-width: 128px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.flexbox-item p {
+    color: #d2c3ff;
+    backdrop-filter: blur(32px);
+    margin-top: 5px;
+    font-size: 16px;
+    word-break: break-all;
+}
+
+/* CSS styles for the modal */
+.modal {
+
+
+
+    display: none; /* Hide the modal by default */
+
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999; /* Set a high z-index to position the modal on top of everything */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background */
+
+    backdrop-filter: blur(5px); /* Add backdrop blur effect */
+}
+.modal h2
+{
+    padding-top: 30px;
+    filter: drop-shadow(0 0px 24px rgb(255, 161, 38));
+
+}
+.modal p
+{
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+    filter: drop-shadow(0 0px 24px rgb(84, 43, 9));
+    max-width: 80%;
+    padding-top: 30px;
+    padding-left: 90px;
+    line-height: 1.5em;
+}
+
+
+
+.modal-content {
+
+
+    border-radius: 5px;
+    text-align: center;
+    position: relative; /* Add relative position to make z-index work */
+    z-index: 10000; /* Set a higher z-index than the modal to ensure it's on top */
+    line-height: 1.5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+
+
+}
+
+.flexbox-gallery img:hover
+{
+    transform: scale(1.12);
+    filter: drop-shadow(0 0px 4px rgb(137, 255, 140));
+}
+.flexbox-gallery img
+{  object-fit: contain;
+    width: 512px;
+    height: 512px;
+
+    filter: drop-shadow(0 0px 2px rgb(255, 255, 255));
+
+
+
+}
+.flexbox-gallery {
+
+
+    display: flex;
+    background-size: cover;
+
+    width: 80%;
+    align-items : center;
+    justify-content: space-between;
+    text-align: center;
+    gap :64px;
+    overflow : scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+.close {
+    filter: drop-shadow(0 0px 24px rgb(190, 0, 0));
+    font-size: 4em;
+    background-color: white;
+    border-radius: 4em;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+@media (max-aspect-ratio: 3/4) {
+    body{
+        background-color: black;
+        line-height: 1.25;
+    }
+    header
+    {
+        display: none;
+    }
+    #home {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .flexbox-container
+    {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .flexbox-item img
+    {
+        min-width: 256px;
+        min-height: 256px;
+
+        object-fit: cover;
+    }
+    .flexbox-item
+    {
+        margin: 5px;
+        min-width: 256px;
+        min-height: 256px;
+    }
+    .flexbox-gallery {
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        justify-content: center; /* Center align flex items */
+        flex-wrap: wrap; /* Allow flex items to wrap to next row */
+    }
+
+    .flexbox-gallery img {
+        margin-right: 10px; /* Add margin between images horizontally */
+        margin-bottom: 10px; /* Add margin between images vertically */
+        flex: 0 0 calc(20% - 20px); /* Set flex basis to evenly distribute items in grid */
+    }
+
+}
+@keyframes slowDrunkBlur {
+    0%{
+        transform: scale(100%);
+        backdrop-filter: blur(0px);
+    }
+    50%{
+        backdrop-filter: blur(8px);
+    }
+    70%{
+        transform: scale(99%);
+        backdrop-filter: blur(25px);
+    }
+    100%{
+        backdrop-filter: blur(0px);
+        transform: scale(100%);
+    }
+
+}
+@keyframes dancingIconText {
+    0%
+    {
+        filter: drop-shadow(0 0px 24px rgba(114, 255, 243, 0));
+    }
+    50%
+    {
+        filter: drop-shadow(0 0px 4px rgb(114, 255, 243));
+    }
+    100%
+    {
+        filter: drop-shadow(0 0px 24px rgba(114, 255, 243, 0));
+    }
+}
+@keyframes dancingIcon{
+    0%
+    {
+        filter: drop-shadow(0 0px 24px rgba(114, 255, 243, 0));
+    }
+    50%
+    {
+        filter: drop-shadow(0 0px 4px rgb(114, 255, 243));
+    }
+    100%
+    {
+        filter: drop-shadow(0 0px 24px rgba(114, 255, 243, 0));
+    }
+}
+@keyframes dancingIconSelected{
+    0%
+    {
+        rotate: 0deg;
+        filter: drop-shadow(0 0px 24px rgba(114, 255, 243, 0));
+    }
+   25%
+    {
+        rotate: 4deg;
+        filter: drop-shadow(0 0px 4px rgb(114, 255, 243));
+    }
+    50%
+    {
+        rotate: -4deg;
+        filter: drop-shadow(0 0px 4px rgb(114, 255, 243));
+    }
+    75%
+    {
+        rotate: 0deg;
+        filter: drop-shadow(0 0px 4px rgb(114, 255, 243));
+    }
+    100%
+    {
+        rotate: 0deg;
+        filter: drop-shadow(0 0px 24px rgba(114, 255, 243, 0));
+    }
 }
