@@ -29,7 +29,14 @@ header {
     padding-bottom: 25px;
     filter: drop-shadow(0 0 8px rgb(255, 255, 255));
 }
-
+.invite_header
+{
+    padding: 25px;
+    color: white;
+    justify-content:center;
+    text-align: center;
+    background-color: black;
+}
 #navigation-bar {
     padding: 25px;
     width: 90%;
@@ -322,6 +329,11 @@ h2 span {
 
 
 }
+.modal-description
+{
+    width: 80%;
+    margin: 0 auto;
+}
 
 .flexbox-gallery img:hover
 {
@@ -371,6 +383,15 @@ h2 span {
     body{
         background-color: black;
         line-height: 1.25;
+    }
+    .invite_header
+    {
+        padding: 25px;
+        color: white;
+        justify-content:center;
+        text-align: center;
+
+        background-color: black;
     }
     header
     {

@@ -26,21 +26,23 @@ class Project {
 
 function setModalContent(content_id)
 {
-    const cle1Project = new Project(0,"CLE1 : Internet of Things",
+    const cle1Project = new Project(0,"Internet of Things (CLE1: IoT)",
         "My first CMGT project.<br>  I worked with my team mates to make a small robot.",
         ["img/robot-week-0.jpg", "img/robot-week-1.png"]);
-    const cle2Project = new Project(1,"CLE2 : Web Applications",
+    const cle2Project = new Project(1,"Web Applications (CLE2: Web)",
         "My second CMGT project.<br>  I ended up making a DJ reservation system.",
         ["img/rv_sys_1.PNG", "img/rv_sys_2.PNG", "img/rv_sys_3.PNG"]);
-    const cle3Project = new Project(2,"CLE3 : Mobile",
+    const cle3Project = new Project(2,"Mobile Devices (CLE3: Mobile)",
         "<h1>My third CMGT project.</h1><br>  I worked with a team to make a prototype Hospital Finder for" +
         "the hard of hearing. <br> This was a <b>particularly</b> difficult project as I had to do quite a bit of research" +
         "as well as learn how to make a WebApi and use <b>javascript</b> for various aspects of the project.<br><i>Somehow this was more complicated than working" +
         "on a Unity Game and making custom systems.</i>",
         ["img/NGT_Pic_0.PNG", "img/NGT_Pic_1.PNG", "img/NGT_Pic_2.PNG" , "img/NGT_Pic_3.PNG"]);
-    const cle4Project = new Project(2,"CLE4 : Games ",
-        "Coming Soon...",
-        []);
+    const cle4Project = new Project(0,"Melodies of Mystery (CLE4:Games) ",
+        "A short and sweet vertical slice of a detective game made using Excalibur.js<br> It was difficult due to lack of engine documentation but, me and my group made a nice little game regardless.<br>" +
+        "Next time I would like to remake the game in a different engine and have a little more than two weeks time.<br>" +
+        "Try the game out! : <a href='https://zaidprojectsdev.github.io/HA_Agent_CLE4/'>Melodies of Mystery",
+        ["img/game_1.PNG", "img/game_2.PNG", "img/game_3.PNG", "img/game_4.PNG"]);
     const whoAmIProject = new Project(2,"About  Me : ",
         "<h1>Hi! I'm Zaid.</h1> <br> I'm an aspiring game developer and currently a student at <i>Hogeschool Rotterdam. </i><br> " +
         "<b>My likes are</b> : <br> " +
