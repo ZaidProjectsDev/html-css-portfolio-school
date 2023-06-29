@@ -42,7 +42,7 @@ function setModalContent(content_id)
         "A short and sweet vertical slice of a detective game made using Excalibur.js<br> It was difficult due to lack of engine documentation but, me and my group made a nice little game regardless.<br>" +
         "Next time I would like to remake the game in a different engine and have a little more than two weeks time.<br>" +
         "Try the game out! : <a href='https://zaidprojectsdev.github.io/HA_Agent_CLE4/'>Melodies of Mystery",
-        ["img/game_1.PNG", "img/game_2.PNG", "img/game_3.PNG", "img/game_4.PNG"]);
+        ["img/game_1.png", "img/game_2.png", "img/game_3.png", "img/game_4.png"]);
     const whoAmIProject = new Project(2,"About  Me : ",
         "<h1>Hi! I'm Zaid.</h1> <br> I'm an aspiring game developer and currently a student at <i>Hogeschool Rotterdam. </i><br> " +
         "<b>My likes are</b> : <br> " +
